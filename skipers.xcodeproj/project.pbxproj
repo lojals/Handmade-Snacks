@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECA0077E18D14EC2000BB2DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA0077D18D14EC2000BB2DA /* Foundation.framework */; };
+		ECA0078018D14EC2000BB2DA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA0077F18D14EC2000BB2DA /* CoreGraphics.framework */; };
+		ECA0078218D14EC2000BB2DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA0078118D14EC2000BB2DA /* UIKit.framework */; };
+		ECA0078818D14EC2000BB2DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA0078618D14EC2000BB2DA /* InfoPlist.strings */; };
+		ECA0078A18D14EC2000BB2DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0078918D14EC2000BB2DA /* main.m */; };
+		ECA0078E18D14EC2000BB2DA /* _66AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0078D18D14EC2000BB2DA /* _66AppDelegate.m */; };
+		ECA0079118D14EC2000BB2DA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA0078F18D14EC2000BB2DA /* Main_iPhone.storyboard */; };
+		ECA0079418D14EC2000BB2DA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECA0079218D14EC2000BB2DA /* Main_iPad.storyboard */; };
+		ECA0079718D14EC2000BB2DA /* _66ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA0079618D14EC2000BB2DA /* _66ViewController.m */; };
+		ECA0079918D14EC2000BB2DA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECA0079818D14EC2000BB2DA /* Images.xcassets */; };
+		ECA007A018D14EC2000BB2DA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA0079F18D14EC2000BB2DA /* XCTest.framework */; };
+		ECA007A118D14EC2000BB2DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA0077D18D14EC2000BB2DA /* Foundation.framework */; };
+		ECA007A218D14EC2000BB2DA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA0078118D14EC2000BB2DA /* UIKit.framework */; };
+		ECA007AA18D14EC2000BB2DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECA007A818D14EC2000BB2DA /* InfoPlist.strings */; };
+		ECA007AC18D14EC2000BB2DA /* skipersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA007AB18D14EC2000BB2DA /* skipersTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECA007A318D14EC2000BB2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA0077218D14EC2000BB2DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECA0077918D14EC2000BB2DA;
+			remoteInfo = skipers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECA0077A18D14EC2000BB2DA /* skipers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skipers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA0077D18D14EC2000BB2DA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECA0077F18D14EC2000BB2DA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECA0078118D14EC2000BB2DA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ECA0078518D14EC2000BB2DA /* skipers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "skipers-Info.plist"; sourceTree = "<group>"; };
+		ECA0078718D14EC2000BB2DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECA0078918D14EC2000BB2DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECA0078B18D14EC2000BB2DA /* skipers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "skipers-Prefix.pch"; sourceTree = "<group>"; };
+		ECA0078C18D14EC2000BB2DA /* _66AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _66AppDelegate.h; sourceTree = "<group>"; };
+		ECA0078D18D14EC2000BB2DA /* _66AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _66AppDelegate.m; sourceTree = "<group>"; };
+		ECA0079018D14EC2000BB2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		ECA0079318D14EC2000BB2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		ECA0079518D14EC2000BB2DA /* _66ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _66ViewController.h; sourceTree = "<group>"; };
+		ECA0079618D14EC2000BB2DA /* _66ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _66ViewController.m; sourceTree = "<group>"; };
+		ECA0079818D14EC2000BB2DA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECA0079E18D14EC2000BB2DA /* skipersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skipersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA0079F18D14EC2000BB2DA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ECA007A718D14EC2000BB2DA /* skipersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "skipersTests-Info.plist"; sourceTree = "<group>"; };
+		ECA007A918D14EC2000BB2DA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ECA007AB18D14EC2000BB2DA /* skipersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = skipersTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECA0077718D14EC2000BB2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA0078018D14EC2000BB2DA /* CoreGraphics.framework in Frameworks */,
+				ECA0078218D14EC2000BB2DA /* UIKit.framework in Frameworks */,
+				ECA0077E18D14EC2000BB2DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA0079B18D14EC2000BB2DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA007A018D14EC2000BB2DA /* XCTest.framework in Frameworks */,
+				ECA007A218D14EC2000BB2DA /* UIKit.framework in Frameworks */,
+				ECA007A118D14EC2000BB2DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECA0077118D14EC2000BB2DA = {
+			isa = PBXGroup;
+			children = (
+				ECA0078318D14EC2000BB2DA /* skipers */,
+				ECA007A518D14EC2000BB2DA /* skipersTests */,
+				ECA0077C18D14EC2000BB2DA /* Frameworks */,
+				ECA0077B18D14EC2000BB2DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECA0077B18D14EC2000BB2DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0077A18D14EC2000BB2DA /* skipers.app */,
+				ECA0079E18D14EC2000BB2DA /* skipersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA0077C18D14EC2000BB2DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0077D18D14EC2000BB2DA /* Foundation.framework */,
+				ECA0077F18D14EC2000BB2DA /* CoreGraphics.framework */,
+				ECA0078118D14EC2000BB2DA /* UIKit.framework */,
+				ECA0079F18D14EC2000BB2DA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECA0078318D14EC2000BB2DA /* skipers */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0078C18D14EC2000BB2DA /* _66AppDelegate.h */,
+				ECA0078D18D14EC2000BB2DA /* _66AppDelegate.m */,
+				ECA0078F18D14EC2000BB2DA /* Main_iPhone.storyboard */,
+				ECA0079218D14EC2000BB2DA /* Main_iPad.storyboard */,
+				ECA0079518D14EC2000BB2DA /* _66ViewController.h */,
+				ECA0079618D14EC2000BB2DA /* _66ViewController.m */,
+				ECA0079818D14EC2000BB2DA /* Images.xcassets */,
+				ECA0078418D14EC2000BB2DA /* Supporting Files */,
+			);
+			path = skipers;
+			sourceTree = "<group>";
+		};
+		ECA0078418D14EC2000BB2DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA0078518D14EC2000BB2DA /* skipers-Info.plist */,
+				ECA0078618D14EC2000BB2DA /* InfoPlist.strings */,
+				ECA0078918D14EC2000BB2DA /* main.m */,
+				ECA0078B18D14EC2000BB2DA /* skipers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECA007A518D14EC2000BB2DA /* skipersTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECA007AB18D14EC2000BB2DA /* skipersTests.m */,
+				ECA007A618D14EC2000BB2DA /* Supporting Files */,
+			);
+			path = skipersTests;
+			sourceTree = "<group>";
+		};
+		ECA007A618D14EC2000BB2DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA007A718D14EC2000BB2DA /* skipersTests-Info.plist */,
+				ECA007A818D14EC2000BB2DA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECA0077918D14EC2000BB2DA /* skipers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA007AF18D14EC2000BB2DA /* Build configuration list for PBXNativeTarget "skipers" */;
+			buildPhases = (
+				ECA0077618D14EC2000BB2DA /* Sources */,
+				ECA0077718D14EC2000BB2DA /* Frameworks */,
+				ECA0077818D14EC2000BB2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = skipers;
+			productName = skipers;
+			productReference = ECA0077A18D14EC2000BB2DA /* skipers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECA0079D18D14EC2000BB2DA /* skipersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECA007B218D14EC2000BB2DA /* Build configuration list for PBXNativeTarget "skipersTests" */;
+			buildPhases = (
+				ECA0079A18D14EC2000BB2DA /* Sources */,
+				ECA0079B18D14EC2000BB2DA /* Frameworks */,
+				ECA0079C18D14EC2000BB2DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECA007A418D14EC2000BB2DA /* PBXTargetDependency */,
+			);
+			name = skipersTests;
+			productName = skipersTests;
+			productReference = ECA0079E18D14EC2000BB2DA /* skipersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECA0077218D14EC2000BB2DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = 666;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = jomobile.co;
+				TargetAttributes = {
+					ECA0079D18D14EC2000BB2DA = {
+						TestTargetID = ECA0077918D14EC2000BB2DA;
+					};
+				};
+			};
+			buildConfigurationList = ECA0077518D14EC2000BB2DA /* Build configuration list for PBXProject "skipers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECA0077118D14EC2000BB2DA;
+			productRefGroup = ECA0077B18D14EC2000BB2DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECA0077918D14EC2000BB2DA /* skipers */,
+				ECA0079D18D14EC2000BB2DA /* skipersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECA0077818D14EC2000BB2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA0079418D14EC2000BB2DA /* Main_iPad.storyboard in Resources */,
+				ECA0079918D14EC2000BB2DA /* Images.xcassets in Resources */,
+				ECA0079118D14EC2000BB2DA /* Main_iPhone.storyboard in Resources */,
+				ECA0078818D14EC2000BB2DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA0079C18D14EC2000BB2DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA007AA18D14EC2000BB2DA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA0077618D14EC2000BB2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA0078E18D14EC2000BB2DA /* _66AppDelegate.m in Sources */,
+				ECA0079718D14EC2000BB2DA /* _66ViewController.m in Sources */,
+				ECA0078A18D14EC2000BB2DA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECA0079A18D14EC2000BB2DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECA007AC18D14EC2000BB2DA /* skipersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECA007A418D14EC2000BB2DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECA0077918D14EC2000BB2DA /* skipers */;
+			targetProxy = ECA007A318D14EC2000BB2DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECA0078618D14EC2000BB2DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA0078718D14EC2000BB2DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ECA0078F18D14EC2000BB2DA /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA0079018D14EC2000BB2DA /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		ECA0079218D14EC2000BB2DA /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA0079318D14EC2000BB2DA /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		ECA007A818D14EC2000BB2DA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECA007A918D14EC2000BB2DA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECA007AD18D14EC2000BB2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECA007AE18D14EC2000BB2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECA007B018D14EC2000BB2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skipers/skipers-Prefix.pch";
+				INFOPLIST_FILE = "skipers/skipers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ECA007B118D14EC2000BB2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skipers/skipers-Prefix.pch";
+				INFOPLIST_FILE = "skipers/skipers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ECA007B318D14EC2000BB2DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/skipers.app/skipers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skipers/skipers-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "skipersTests/skipersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ECA007B418D14EC2000BB2DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/skipers.app/skipers";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "skipers/skipers-Prefix.pch";
+				INFOPLIST_FILE = "skipersTests/skipersTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECA0077518D14EC2000BB2DA /* Build configuration list for PBXProject "skipers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA007AD18D14EC2000BB2DA /* Debug */,
+				ECA007AE18D14EC2000BB2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECA007AF18D14EC2000BB2DA /* Build configuration list for PBXNativeTarget "skipers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA007B018D14EC2000BB2DA /* Debug */,
+				ECA007B118D14EC2000BB2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECA007B218D14EC2000BB2DA /* Build configuration list for PBXNativeTarget "skipersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECA007B318D14EC2000BB2DA /* Debug */,
+				ECA007B418D14EC2000BB2DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECA0077218D14EC2000BB2DA /* Project object */;
+}
