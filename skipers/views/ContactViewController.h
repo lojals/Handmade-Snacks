@@ -10,4 +10,8 @@
 
 @interface ContactViewController : UIViewController
 
+@property (strong,nonatomic) IBOutlet UITextView *txtContacto;
+@property (strong,nonatomic) IBOutlet UILabel *txtContacto2;
+@property int language;
+
 @end

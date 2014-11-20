@@ -9,7 +9,7 @@
 #import "RecipesTableViewCell.h"
 
 @implementation RecipesTableViewCell
-
+@synthesize ing1,ing2,ing3;
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

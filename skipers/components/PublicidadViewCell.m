@@ -9,6 +9,7 @@
 #import "PublicidadViewCell.h"
 
 @implementation PublicidadViewCell
+@synthesize image,tel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

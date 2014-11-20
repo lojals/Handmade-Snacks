@@ -9,6 +9,7 @@
 #import "InterestingTableViewCell.h"
 
 @implementation InterestingTableViewCell
+@synthesize title,url;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

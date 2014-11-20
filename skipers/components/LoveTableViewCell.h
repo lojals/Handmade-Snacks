@@ -10,4 +10,7 @@
 
 @interface LoveTableViewCell : UITableViewCell
 
+@property (strong,nonatomic) IBOutlet UILabel * loveCounter;
+@property (strong,nonatomic) IBOutlet UILabel * loveContent;
+@property (strong,nonatomic) IBOutlet UIImageView * loveImage;
 @end

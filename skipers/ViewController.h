@@ -12,7 +12,11 @@
 @interface ViewController : UIViewController <UIPageViewControllerDataSource>
 
 - (IBAction)startWalkthrough:(id)sender;
+@property int language;
+@property NSString* ingstr;
+@property NSString* dirstr;
 @property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (strong, nonatomic) NSMutableArray *basicRecipes;
 @property (strong, nonatomic) NSArray *pageTitles;
 @property (strong, nonatomic) NSArray *pageImages;
 

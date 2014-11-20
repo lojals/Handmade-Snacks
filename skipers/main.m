@@ -10,6 +10,7 @@
 
 #import "_66AppDelegate.h"
 
+//int language;
 int main(int argc, char * argv[])
 {
     @autoreleasepool {

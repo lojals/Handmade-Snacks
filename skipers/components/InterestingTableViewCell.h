@@ -10,4 +10,7 @@
 
 @interface InterestingTableViewCell : UITableViewCell
 
+@property (strong,nonatomic) IBOutlet UILabel* title;
+@property (strong,nonatomic) IBOutlet UILabel* url;
+
 @end

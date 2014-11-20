@@ -8,6 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Publicidad : NSObject
+@interface Publicidad : NSObject{
+    int idPublicidad;
+    NSString *nomPublicidad;
+    NSString *webPublicidad;
+    NSString *telPublicidad;
+    NSString *imgPublicidad;
+}
+
+//GETS
+-(int) getIdPublicidad;
+-(NSString*) getNomPublicidad;
+-(NSString*) getWebPublicidad;
+-(NSString*) getTelPublicidad;
+-(NSString*) getImgPublicidad;
+//SETS
+-(void) setIdPublicidad:(int)idPublicidadN;
+-(void) setNomPublicidad:(NSString*) nomPublicidadN;
+-(void) setWebPublicidad:(NSString*) webPublicidadN;
+-(void) setTelPublicidad: (NSString*) telPublicidadN;
+-(void) setImgPublicidad: (NSString*) imgPublicidadN;
+
 
 @end

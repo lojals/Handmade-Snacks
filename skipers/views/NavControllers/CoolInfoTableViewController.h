@@ -10,4 +10,6 @@
 
 @interface CoolInfoTableViewController : UITableViewController
 
+@property (strong, nonatomic) NSMutableArray *interestingList;
+@property int language;
 @end

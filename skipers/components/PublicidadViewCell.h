@@ -10,4 +10,7 @@
 
 @interface PublicidadViewCell : UITableViewCell
 
+@property (weak,nonatomic) IBOutlet UIImageView *image;
+@property (weak,nonatomic) IBOutlet UILabel *tel;
+
 @end

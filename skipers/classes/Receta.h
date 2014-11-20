@@ -8,6 +8,27 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Receta : NSObject
+@interface Receta : NSObject{
+    int idReceta;
+    NSString *nombre;
+    NSString *ingredientes;
+    NSString *preparacion;
+    NSString *amor;
+    NSString *img;
+}
+//GETS
+-(int)getIdReceta;
+-(NSString*)getNombre;
+-(NSString*)getIngredientes;
+-(NSString*)getPreparacion;
+-(NSString*)getAmor;
+-(NSString*)getImg;
 
+//SETS
+-(void)setIdReceta:(int)idRecetaN;
+-(void)setNombre:(NSString*)nombreN;
+-(void)setIngredientes:(NSString*)ingredientesN;
+-(void)setPreparacion:(NSString*)preparacionN;
+-(void)setAmor:(NSString*)amorN;
+-(void)setImg:(NSString*)imgN;
 @end

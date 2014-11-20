@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebViewController : UIViewController
+@interface WebViewController : UIViewController <UIWebViewDelegate> {
+    UIActivityIndicatorView *activityIndicator;
+}
 
+@property NSString *url;
+@property (strong,nonatomic) IBOutlet UIWebView *web;
+@property (strong,nonatomic) IBOutlet UIActivityIndicatorView *activity;
+
+
+- (void)webViewDidStartLoad:(UIWebView *)webView; //a web view starts loading
+- (void)webViewDidFinishLoad:(UIWebView *)webView;//web view finishes loading
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error;
 @end

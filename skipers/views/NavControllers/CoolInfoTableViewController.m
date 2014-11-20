@@ -7,12 +7,17 @@
 //
 
 #import "CoolInfoTableViewController.h"
+#import "Interesting.h"
+#import "Conexion.h"
+#import "InterestingTableViewCell.h"
+#import "WebViewController.h"
 
 @interface CoolInfoTableViewController ()
 
 @end
 
 @implementation CoolInfoTableViewController
+@synthesize interestingList;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,14 +31,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    interestingList = [[NSMutableArray alloc] init];
+    Conexion *cone = [[Conexion alloc] init];
+    NSLog(@"%d",_language);
+    [cone openDB];
+    interestingList = [cone getCoolInformation:_language];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    NSString *deviceModel = (NSString*)[UIDevice currentDevice].model;
+    if ([[deviceModel substringWithRange:NSMakeRange(0, 4)] isEqualToString:@"iPad"]) {
+        if(_language == 1){
+            [self.navigationItem setTitle:@"Información Chevere"];
+        }else{
+            [self.navigationItem setTitle:@"Cool Information"];
+        }
+    }
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.839 green:0.529 blue:0.988 alpha:1];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [UIColor colorWithRed:0.839 green:0.529 blue:0.988 alpha:1], NSFontAttributeName : [UIFont fontWithName:@"HelveticaNeue-Thin" size:21.0]}];
+    self.navigationController.navigationBar.translucent = NO;
 }
-
+- (void) popVC{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -44,28 +63,28 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [interestingList count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    InterestingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"interestingCell" forIndexPath:indexPath];
+    int row = (int)[indexPath row];
+    Interesting *inte = interestingList[row];
+    cell.backgroundColor = [UIColor colorWithRed:1.f  green:1.f blue:1.f alpha:0.02f];
+    cell.title.text = [inte getNamInteresting];
+    cell.url.text = [inte getContentInteresting];
+        cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"disclosure_red.png"]];
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -105,15 +124,21 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"goCool"]) {
+        WebViewController *detail = [segue destinationViewController];
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+        int row = (int)[myIndexPath row];
+        Interesting *inte = interestingList[row];
+        NSLog(@"%@", inte.getContentInteresting);
+        detail.url = inte.getContentInteresting;
+    }
 }
-*/
+
 
 @end

@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Love : NSObject
-
+@interface Love : NSObject{
+    NSString* contLove;
+    NSString* imgLove;
+}
+//GETS
+-(NSString *) getContLove;
+-(NSString *) getImgLove;
+//SETS
+-(void)setContLove:(NSString *)contLoveN;
+-(void)setImgLove:(NSString *)imgLoveN;
+//CUSTOM
+-(bool)haveImg;
 @end

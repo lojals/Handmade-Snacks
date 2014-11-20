@@ -10,4 +10,7 @@
 
 @interface AdTableViewController : UITableViewController
 
+@property (nonatomic, retain) NSMutableArray *foodList;
+@property int language;
+
 @end

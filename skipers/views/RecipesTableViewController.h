@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
-@interface RecipesTableViewController : UITableViewController
+@interface RecipesTableViewController : UITableViewController{
+    int counter;
+}
 
+@property (strong,nonatomic) NSMutableArray *listSnacks;
+
+@property int idIngrediente;
+@property NSString* imgText3;
 @end

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface RecipesTableViewCell : UITableViewCell
+@property (nonatomic,strong) IBOutlet UIImageView * ing1;
+@property (nonatomic,strong) IBOutlet UIImageView * ing2;
+@property (nonatomic,strong) IBOutlet UIImageView * ing3;
 
 @end

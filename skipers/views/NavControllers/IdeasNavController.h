@@ -10,4 +10,6 @@
 
 @interface IdeasNavController : UINavigationController
 
+@property int language;
+
 @end

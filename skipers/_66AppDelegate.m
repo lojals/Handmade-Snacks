@@ -13,8 +13,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //[[UITabBar appearance] setSelectedImageTintColor:[UIColor colorWithRed:0.984 green:0.278 blue:0.259 alpha:1]];
+    //[[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.984 green:0.278 blue:0.259 alpha:0.2]];
+    //[[UITabBar appearance] setSelectedImageTintColor:[UIColor blackColor]];
+   // [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:1 green:1 blue:1 alpha:0]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIFont fontWithName:@"HelveticaNeue-Thin" size:25.0], NSFontAttributeName, nil]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+    pageControl.backgroundColor = [UIColor whiteColor];
     return YES;
+    
+    
 }
+
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -7,12 +7,14 @@
 //
 
 #import "IdeasNavController.h"
+#import "../TabBarController.h"
 
 @interface IdeasNavController ()
 
 @end
 
 @implementation IdeasNavController
+@synthesize language;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +29,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    /*NSLog(@"Muttaffukka");
+    NSLog(@"%d",((TabBarController*)self.parentViewController).language);*/
+    language = ((TabBarController*)self.parentViewController).language;
 }
 
 - (void)didReceiveMemoryWarning

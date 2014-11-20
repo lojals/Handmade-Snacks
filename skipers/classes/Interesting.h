@@ -8,6 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Interesting : NSObject
+@interface Interesting : NSObject{
+    int idInteresting;
+    NSString *namInteresting;
+    NSString *contentInteresting;
+}
+
+//GETS
+-(int)getIdInteresting;
+-(NSString*)getNamInteresting;
+-(NSString*)getContentInteresting;
+//SETS
+-(void)setIdInteresting:(int)idInterestingN;
+-(void)setNamInteresting:(NSString*)namInterestingN;
+-(void)setContentInteresting:(NSString*)contentInterestingN;
 
 @end

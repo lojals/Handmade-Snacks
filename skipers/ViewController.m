@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Conexion.h"
+#import "Receta.h"
 
 @interface ViewController ()
 
@@ -18,6 +20,18 @@
 {
     [super viewDidLoad];
 	// Create the data model
+    Conexion *conn = [[Conexion alloc] init];
+    [conn openDB];
+    
+    if(_language == 1){
+        _ingstr = @"Ingredientes";
+        _dirstr = @"Preparación";
+    }else{
+        _ingstr = @"Ingredients";
+        _dirstr = @"Directions";
+    }
+    _basicRecipes = [conn getBasicas:_language];
+    
     _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
     _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
     
@@ -30,7 +44,7 @@
     [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
     
     // Change the size of page view controller
-    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 30);
+    self.pageViewController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 55);
     
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
@@ -52,14 +66,21 @@
 
 - (PageContentViewController *)viewControllerAtIndex:(NSUInteger)index
 {
-    if (([self.pageTitles count] == 0) || (index >= [self.pageTitles count])) {
+    if (([self.pageTitles count] == 0) || (index >= [self.basicRecipes count])) {
         return nil;
     }
     
     // Create a new view controller and pass suitable data.
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
-    pageContentViewController.imageFile = self.pageImages[index];
+   /* pageContentViewController.imageFile = self.pageImages[index];
     pageContentViewController.titleText = self.pageTitles[index];
+    pageContentViewController.pageIndex = index;*/
+    
+    
+    Receta *rec = self.basicRecipes[index];
+    pageContentViewController.imageFile = [NSString stringWithFormat:@"%@.jpg",[rec getImg]];
+    pageContentViewController.titleText = [rec getNombre];
+    pageContentViewController.contentText = [NSString stringWithFormat:@"%@ \n\n%@\n\n%@ \n\n%@", _ingstr, [rec getIngredientes], _dirstr, [rec getPreparacion]];
     pageContentViewController.pageIndex = index;
     
     return pageContentViewController;

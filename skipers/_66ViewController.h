@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface _66ViewController : UIViewController
+//@property (strong, nonatomic) IBOutlet UILabel *language;
+
+//extern int language;
+
+@property (strong, nonatomic) IBOutlet UILabel *header;
+@property (strong,nonatomic) IBOutlet UIButton *btnEsp;
+@property (strong,nonatomic) IBOutlet UIButton *btnEng;
+@property (strong,nonatomic) IBOutlet UIImageView *bgApp;
 
 @end

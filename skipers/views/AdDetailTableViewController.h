@@ -10,4 +10,6 @@
 
 @interface AdDetailTableViewController : UITableViewController
 
+@property (retain,nonatomic) NSMutableArray *adList;
+@property int idIngrediente;
 @end

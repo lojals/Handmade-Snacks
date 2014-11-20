@@ -8,6 +8,18 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Export : NSObject
+@interface Export : NSObject{
+    int idExport;
+    NSString *namExport;
+    NSString *nomExport;
+}
 
+//GETS
+-(int) getIdExport;
+-(NSString*) getNamExport;
+-(NSString*) getNomExport;
+//SETS
+-(void) setIdExport:(int)idExportN;
+-(void) setNamExport:(NSString*)namExportN;
+-(void) setNomExport:(NSString*)nomExportN;
 @end

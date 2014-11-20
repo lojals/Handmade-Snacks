@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface InfoViewController : UIViewController
+
+@interface InfoViewController : UIViewController <UITabBarDelegate>
+@property int lang;
+@property (strong, nonatomic) IBOutlet UIButton *btnWeek;
+@property (strong, nonatomic) IBOutlet UIButton *btnHot;
+@property (strong, nonatomic) IBOutlet UIButton *btnBuy;
+
+
 
 @end

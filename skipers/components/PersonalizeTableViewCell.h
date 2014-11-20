@@ -10,4 +10,8 @@
 
 @interface PersonalizeTableViewCell : UITableViewCell
 
+@property (strong,nonatomic) IBOutlet UILabel *title;
+@property (strong,nonatomic) IBOutlet UISwitch *switchP;
+
+
 @end

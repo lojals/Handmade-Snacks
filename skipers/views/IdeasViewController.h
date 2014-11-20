@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface IdeasViewController : UIViewController
-
+@property int lang;
+@property (strong,nonatomic) IBOutlet UIButton *coolbtn;
+@property (strong,nonatomic) IBOutlet UIButton *presbtn;
+@property (strong,nonatomic) IBOutlet UIButton *lovebtn;
 @end

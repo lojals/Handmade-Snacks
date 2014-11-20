@@ -7,6 +7,12 @@
 //
 
 #import "RecipesTableViewController.h"
+#import "RecipesTableViewCell.h"
+#import "RecipeViewController.h"
+#import "Conexion.h"
+#import "listSnack.h"
+#import "AdDetailTableViewController.h"
+#import "RecipeDetailTableViewController.h"
 
 @interface RecipesTableViewController ()
 
@@ -26,6 +32,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    Conexion *conn = [[Conexion alloc] init];
+    [conn openDB];
+    counter = 0;
+    _listSnacks = [conn getSnackList:_idIngrediente];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -44,28 +55,44 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [_listSnacks count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
+    RecipesTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"recipesCell" forIndexPath:indexPath];
+    int row = (int)[indexPath row];
+
+    listSnack *snack = _listSnacks[row];
+        if([snack getIdIng1] == 76){
+            _imgText3 = [NSString stringWithFormat:@"bread%d.jpg",arc4random()%10];
+            [snack setIng1:_imgText3];
+            counter ++;
+            [cell.ing1 setImage:[UIImage imageNamed: _imgText3]];
+        }
+        else{
+            [cell.ing1 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",[snack getIng1]]]];
+        }
+        if([snack getIdRecipe] != 72)
+            [cell.ing2 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",[snack getIng2]]]];
+        else{
+            [snack setIng1:@"salpicon   "];
+            [cell.ing2 setImage:[UIImage imageNamed:@"salpicon.jpg.jpg"]];
+        }
+        [cell.ing3 setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg",[snack getIng3]]]];
+        UIView *bgColorView = [[UIView alloc] init];
+        bgColorView.backgroundColor = [UIColor colorWithRed:0.318 green:0.318 blue:0.318 alpha:0.05];
+        bgColorView.layer.masksToBounds = YES;
+        cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"disclosure_red.png"]];
+        [cell setSelectedBackgroundView:bgColorView];
+        return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -105,15 +132,30 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"goRecipeDetail"]) {
+        RecipeViewController *detail = [segue destinationViewController];
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+        int row = (int)[myIndexPath row];
+        listSnack *pub = _listSnacks[row];
+        detail.lsnk = pub;
+        detail.imgText3 = _imgText3;
+    }else{
+        RecipeDetailTableViewController *detail = [segue destinationViewController];
+        NSIndexPath *myIndexPath = [self.tableView indexPathForSelectedRow];
+        int row = (int)[myIndexPath row];
+        listSnack *pub = _listSnacks[row];
+        detail.lsnk = pub;
+        detail.imgText3 = _imgText3;
+    }
+    
+    
 }
-*/
+
 
 @end

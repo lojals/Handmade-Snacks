@@ -10,4 +10,9 @@
 
 @interface TabBarController : UITabBarController
 
+@property int language;
+@property (strong, nonatomic) IBOutlet UITabBarItem *tab1;
+
+
+
 @end

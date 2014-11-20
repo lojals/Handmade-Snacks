@@ -10,4 +10,8 @@
 
 @interface LoveTableViewController : UITableViewController
 
+@property int language;
+@property int size;
+@property (strong,nonatomic) NSMutableArray *loveList;
+
 @end

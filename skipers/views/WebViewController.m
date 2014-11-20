@@ -13,6 +13,7 @@
 @end
 
 @implementation WebViewController
+@synthesize  web,url;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,18 +24,45 @@
     return self;
 }
 
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+    [_activity startAnimating];
+   // NSLog(@"Inicio???");
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    [_activity stopAnimating];
+   // NSLog(@"Finalizo???");
+}
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error{
+    [_activity stopAnimating];
+   // NSLog(@"Error????");
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [web stopLoading];
+//    NSURL *url = [NSURL URLWithString:@"https://www.facebook.com/pages/Skipers/1425595487685332"];
+    //url = [NSURL URLWithString:@"http://instagram.com/handmadesnacks"];
+   // NSLog(url);
+    NSURL *url2 = [NSURL URLWithString:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url2];
+    [web loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidLoad];
+    [web stopLoading];
+    //    NSURL *url = [NSURL URLWithString:@"https://www.facebook.com/pages/Skipers/1425595487685332"];
+    //url = [NSURL URLWithString:@"http://instagram.com/handmadesnacks"];
+    // NSLog(url);
+    NSURL *url2 = [NSURL URLWithString:url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url2];
+    [web loadRequest:request];
+}
 /*
 #pragma mark - Navigation
 
