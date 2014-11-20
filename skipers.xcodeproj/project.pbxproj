@@ -262,6 +262,11 @@
 		ECD0CA7E18DD6AA80026A0C3 /* AdDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0CA7D18DD6AA80026A0C3 /* AdDetailTableViewController.m */; };
 		ECD0CA8218DD6F7B0026A0C3 /* PublicidadViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0CA8118DD6F7B0026A0C3 /* PublicidadViewCell.m */; };
 		ECD5E64218F2444F00158EE6 /* tabs.png in Resources */ = {isa = PBXBuildFile; fileRef = ECD5E64118F2444F00158EE6 /* tabs.png */; };
+		ECF0DED61A1E8D3100BAC704 /* ideas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF0DED21A1E8D3100BAC704 /* ideas@2x.png */; };
+		ECF0DED71A1E8D3100BAC704 /* deactstar.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF0DED31A1E8D3100BAC704 /* deactstar.png */; };
+		ECF0DED81A1E8D3100BAC704 /* ingicon.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF0DED41A1E8D3100BAC704 /* ingicon.png */; };
+		ECF0DED91A1E8D3100BAC704 /* unnamed.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF0DED51A1E8D3100BAC704 /* unnamed.png */; };
+		ECF0DEDB1A1E8E5800BAC704 /* direcico.png in Resources */ = {isa = PBXBuildFile; fileRef = ECF0DEDA1A1E8E5800BAC704 /* direcico.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -566,6 +571,11 @@
 		ECD0CA8018DD6F7B0026A0C3 /* PublicidadViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublicidadViewCell.h; path = components/PublicidadViewCell.h; sourceTree = "<group>"; };
 		ECD0CA8118DD6F7B0026A0C3 /* PublicidadViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PublicidadViewCell.m; path = components/PublicidadViewCell.m; sourceTree = "<group>"; };
 		ECD5E64118F2444F00158EE6 /* tabs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabs.png; sourceTree = "<group>"; };
+		ECF0DED21A1E8D3100BAC704 /* ideas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ideas@2x.png"; sourceTree = "<group>"; };
+		ECF0DED31A1E8D3100BAC704 /* deactstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deactstar.png; sourceTree = "<group>"; };
+		ECF0DED41A1E8D3100BAC704 /* ingicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ingicon.png; sourceTree = "<group>"; };
+		ECF0DED51A1E8D3100BAC704 /* unnamed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unnamed.png; sourceTree = "<group>"; };
+		ECF0DEDA1A1E8E5800BAC704 /* direcico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = direcico.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -620,6 +630,11 @@
 		EC1B971018D6B6E500363D6A /* tabicons */ = {
 			isa = PBXGroup;
 			children = (
+				ECF0DEDA1A1E8E5800BAC704 /* direcico.png */,
+				ECF0DED21A1E8D3100BAC704 /* ideas@2x.png */,
+				ECF0DED31A1E8D3100BAC704 /* deactstar.png */,
+				ECF0DED41A1E8D3100BAC704 /* ingicon.png */,
+				ECF0DED51A1E8D3100BAC704 /* unnamed.png */,
 				EC33A80918EDA86A005CEBF5 /* contactBig.png */,
 				EC33A7B918EC7755005CEBF5 /* footer.png */,
 				EC33A7BA18EC7756005CEBF5 /* footer@2x.png */,
@@ -1196,6 +1211,7 @@
 				EC33A7E618ED1F49005CEBF5 /* creatPck.png in Resources */,
 				ECD5E64218F2444F00158EE6 /* tabs.png in Resources */,
 				EC33A80218ED30CB005CEBF5 /* lock.png in Resources */,
+				ECF0DED91A1E8D3100BAC704 /* unnamed.png in Resources */,
 				EC1B971818D6B6E500363D6A /* recipes.png in Resources */,
 				EC41684D18DA814A00D98710 /* foot.png in Resources */,
 				EC33A78A18EB78B7005CEBF5 /* pineapple.jpg in Resources */,
@@ -1203,6 +1219,7 @@
 				EC33A76018EB78B7005CEBF5 /* choconibs.jpg in Resources */,
 				EC33A76D18EB78B7005CEBF5 /* granola.jpg in Resources */,
 				EC33A7EA18ED1F49005CEBF5 /* face3.png in Resources */,
+				ECF0DED71A1E8D3100BAC704 /* deactstar.png in Resources */,
 				EC33A78518EB78B7005CEBF5 /* peach.jpg in Resources */,
 				EC8F1FD918F3DDF900BC0816 /* drinkwater.png in Resources */,
 				ECA0079418D14EC2000BB2DA /* Main_iPad.storyboard in Resources */,
@@ -1277,14 +1294,17 @@
 				EC454A9018F8D2EA00AB1879 /* bread7.jpg in Resources */,
 				ECA298251956A3D800453962 /* pandebono.jpg in Resources */,
 				EC41685018DB515800D98710 /* bg2.png in Resources */,
+				ECF0DEDB1A1E8E5800BAC704 /* direcico.png in Resources */,
 				EC33A7E418ED1F49005CEBF5 /* but.png in Resources */,
 				EC33A80318ED30CB005CEBF5 /* lock@2x.png in Resources */,
 				EC33A7EE18ED1F49005CEBF5 /* jokeGr.png in Resources */,
+				ECF0DED81A1E8D3100BAC704 /* ingicon.png in Resources */,
 				EC33A78018EB78B7005CEBF5 /* oatmeal.jpg in Resources */,
 				EC33A76918EB78B7005CEBF5 /* darkchoc.jpg in Resources */,
 				EC46A88418E121E10006938D /* fndIng.png in Resources */,
 				EC33A78618EB78B7005CEBF5 /* peanutbutter.jpg in Resources */,
 				EC33A78D18EB78B7005CEBF5 /* plainyogurt.jpg in Resources */,
+				ECF0DED61A1E8D3100BAC704 /* ideas@2x.png in Resources */,
 				EC33A77218EB78B7005CEBF5 /* greenolives.jpg in Resources */,
 				EC2DA54C18DF911000493763 /* villa.png in Resources */,
 				EC33A77A18EB78B7005CEBF5 /* macadamianuts.jpg in Resources */,

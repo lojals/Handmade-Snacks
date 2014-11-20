@@ -1153,7 +1153,7 @@
         <image name="telads.png" width="61" height="61"/>
         <image name="twico.png" width="67" height="67"/>
         <image name="unlock.png" width="59" height="93"/>
-        <image name="unnamed.png" width="570" height="275"/>
+        <image name="unnamed.png" width="300" height="150"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

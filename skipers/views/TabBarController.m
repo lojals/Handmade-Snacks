@@ -31,6 +31,9 @@
 
     [super viewDidLoad];
     
+    
+    NSLog(@"Tabbariando");
+    
     self.tabBar.translucent = YES;
     // Do any additional setup after loading the view.
     // Custom initialization
